@@ -26,6 +26,7 @@ public class Args
         var value = GetArg(name);
         return value is not null && value == string.Empty;
     }
+    
     public bool HasFlag(params string[] aliases)
     {
         foreach (var name in aliases) if (HasFlag(name)) return true;
