@@ -20,4 +20,12 @@ public class Main
         });
         Assert.IsTrue(res.HasFlag("hello"));
     }
+    [TestMethod]
+    public void ToStr()
+    { //
+        var res = Args.New(new string[] {
+            "-help","-hello","world"
+        });
+        Assert.IsTrue(res.ToString() == "[help, ] [hello, world]");
+    }
 }

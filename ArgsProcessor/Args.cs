@@ -1,4 +1,6 @@
-﻿namespace Kuzya;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Kuzya;
 
 public class Args
 { // Wrapper Dictionary<string,string>
@@ -7,6 +9,10 @@ public class Args
     {
         self = Parse(args);
     }
+    public static Args New(string[] args) => new Args(args);
+
+    public override string ToString() => string.Join(' ', self);
+
     public string? GetArg(string name)
     {
         if (self.TryGetValue(name, out var value)) return value;
@@ -22,6 +28,7 @@ public class Args
         var value = GetArg(name);
         return value is not null && value == string.Empty;
     }
+    
     public bool HasFlag(params string[] aliases)
     {
         foreach (var name in aliases) if (HasFlag(name)) return true;
@@ -59,5 +66,4 @@ public class Args
         }
         return kvs;
     }
-    public static Args New(string[] args) => new Args(args);
 }
