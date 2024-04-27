@@ -5,7 +5,7 @@ namespace ArgsTest {
     {
         [TestMethod]
         public void TestArguments() {
-            var res = Args.Parse(new string[] {
+            var res = Args.New(new string[] {
                 "-hello","world"
             });
             Assert.IsTrue(res.GetArg("hello") == "world");
@@ -13,7 +13,7 @@ namespace ArgsTest {
         [TestMethod]
         public void TestFlags()
         {
-            var res = Args.Parse(new string[] {
+            var res = Args.New(new string[] {
                 "-hello", "-help", "world",
             });
             // Assert.IsTrue(res.GetArg("help") == "world");

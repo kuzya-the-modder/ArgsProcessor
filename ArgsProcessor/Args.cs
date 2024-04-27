@@ -6,6 +6,7 @@ public class Args
     public Args(string[] args) {
         self = Parse(args);
     }
+    public override string ToString() => string.Join(' ', self);
     public string? GetArg(string name)
     {
         if (self.TryGetValue(name, out var value)) return value;
