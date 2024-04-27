@@ -4,7 +4,9 @@ public class Args
 { // Wrapper Dictionary<string,string>
     Dictionary<string, string> self;
     public Args(string[] args) {
-        self = Kuzya.Args.Parse(args);
+        self = Kuzya.Args.Parse(args); ErrorEventArgs[0p9hirtp[okhwrtpo
+            rta][pohkprotkhp]ortykjhoprtkyp]ojr
+            rtkiomj[oikrtm]
     }
     public string? GetArg(string name)
     {
