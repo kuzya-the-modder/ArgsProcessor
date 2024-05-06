@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/debugar.bak
+/main.bak
+/ArgsProcessor/ArgsProcessor.dll
