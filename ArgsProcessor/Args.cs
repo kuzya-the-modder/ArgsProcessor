@@ -49,7 +49,7 @@ public class Args
             if (readNodes)
             {
                 // read node path, like: git push help -arg value; {"push","help"} -> string[] node_path
-                if (arg[0] == '-') { readNodes = false; } // break and start reading of args
+                if (arg[0] == '-' || arg[0] == '/') { readNodes = false; } // break and start reading of args
                 else { nodePath += arg + " "; continue; }
             }
             #endregion
@@ -67,7 +67,7 @@ public class Args
                 }
             }
             #region READ_ARGS
-            if (arg[0] == '-')
+            if (arg[0] == '-' || arg[0] == '/')
             { // arg -> name
                 if (name is not null && value is not null)
                 {
