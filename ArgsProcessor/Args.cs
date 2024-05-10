@@ -1,9 +1,7 @@
-﻿using System.Net;
-
-namespace Kuzya;
+﻿namespace Kuzya;
 
 public class Args
-{ // Wrapper Dictionary<string,string>
+{ // Wrapper Dictionary<string,string>  
     #region Class
     Dictionary<string, string> self;
     public readonly string nodePath;

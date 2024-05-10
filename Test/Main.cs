@@ -24,8 +24,8 @@ public class Main
     public void ToStr()
     { //
         var res = Args.New(new string[] {
-            "-help","-hello","world"
+            "goto","-help","-hello","world"
         });
-        Assert.IsTrue(res.ToString() == "[help, ] [hello, world]");
+        Assert.IsTrue(res.ToString() == "[goto] : [help, ] [hello, world]");
     }
 }
