@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.ps1
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -363,3 +364,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /debugar.bak
 /main.bak
+/ArgsProcessor/ArgsProcessor.dll

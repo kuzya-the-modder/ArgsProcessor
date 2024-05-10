@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgsProcessor", "ArgsProces
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Test\Testing.csproj", "{1B4A8D1E-8BDE-4152-8AD5-657A3D9BD034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debuging", "Debuging\Debuging.csproj", "{A1332C5E-8441-461B-A5B1-A9002F5E207B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debugging", "Debuging\Debugging.csproj", "{A1332C5E-8441-461B-A5B1-A9002F5E207B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
