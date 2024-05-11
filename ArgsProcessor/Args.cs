@@ -42,9 +42,8 @@ public class Args
         bool readNodes = true;
         string nodePath = string.Empty;
         var kvs = new Dictionary<string, string>();
-        foreach (var arg in args)
-        {
-            if (arg == string.Empty) continue;
+        foreach (var arg in args) {
+                if (arg == string.Empty) continue;
             #region READ_NODES
             if (readNodes)
             {
