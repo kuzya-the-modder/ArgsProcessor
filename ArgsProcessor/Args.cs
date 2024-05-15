@@ -3,7 +3,7 @@
 namespace Kuzya;
 
 public class Args
-{ // Wrapper Dictionary<string,string>
+{ // Wrapper Dictionary<string,string> 
     #region Class
     Dictionary<string, string> self;
     public readonly string nodePath;
@@ -26,6 +26,7 @@ public class Args
         var value = GetArg(name);
         return value is not null && value == string.Empty;
     }
+    
     public bool HasFlag(params string[] aliases)
     {
         foreach (var name in aliases) if (HasFlag(name)) return true;
@@ -43,8 +44,8 @@ public class Args
         bool readNodes = true;
         string nodePath = string.Empty;
         var kvs = new Dictionary<string, string>();
-        foreach (var arg in args)
-        {   
+        foreach (var arg in args) {
+                if (arg == string.Empty) continue;
             #region READ_NODES
             if (readNodes)
             {
