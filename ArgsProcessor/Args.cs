@@ -3,7 +3,7 @@
 namespace Kuzya;
 
 public class Args
-{ // Wrapper Dictionary<string,string> 
+{ // Wrapping Dictionary<string,string> 
     #region Class
     Dictionary<string, string> self;
     public readonly string nodePath;
