@@ -1,5 +1,5 @@
 # Argument Processor
-- version : v.2.0 release (06.05.2024)
+- version : v.2.1 release (19.05.2024 :: Refactor)
 ## Changelist:
 - Added CLI Debugger `debugar`
 > Build Debuger/Debugger.csproj. Debugger.exe is debugar.exe, place it in one of your $env:PATH vars 
